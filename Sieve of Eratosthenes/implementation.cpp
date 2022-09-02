@@ -101,3 +101,49 @@ int main()
         cout << it << " ";
     }
 }
+
+/*---------------------------------------------------------------------------------*/
+// >>>>>>>>>>>>>>>>>>> Sieve of Eratosthenes optimal and easiest code <<<<<<<<<<<<<<<<<<< //
+//---------------------------------------------------------------------------------//
+
+#include <bits/stdc++.h>
+using namespace std;
+
+const int space = 1e7+10; // 1e7=10000000
+
+int arr[space] = {0};
+
+void seive()
+{
+    arr[0] = 1;
+    arr[1] = 1;
+
+    for (int i = 2; i * i < space;i++){
+        if(arr[i]==0){
+            for (int j = 2 * i; j < space;j+=i){
+                arr[j] = 1;
+            }
+        }
+    }
+}
+
+int main()
+{
+
+    seive();
+
+    vector<int> vec;
+    for (int i = 0; i < 50; i++)
+    {
+        if (arr[i] == 0)
+        {
+            vec.emplace_back(i);
+        }
+    }
+    for (auto it : vec)
+    {
+        cout << it << " ";
+    }
+}
+
+

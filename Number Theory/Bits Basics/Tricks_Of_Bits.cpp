@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -54,7 +45,16 @@ int main(){
 
     cout<<char('c' & '_')<<endl; // if we do & (and) with underscore and lowercase it will give us uppercase
 
-    //Clear LCB
+    //Check n is power of 2 
+
+    n=15;
+
+    if(n & (n-1)){
+        cout<<"Not power of 2"<<endl;
+    }
+    else{
+        cout<<"Power of 2"<<endl;
+    }
     
 
     return 0;

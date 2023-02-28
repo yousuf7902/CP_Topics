@@ -14,11 +14,13 @@ using namespace std;
             }
             return;
         }
-
+        
+        //For pick elements
         vc.push_back(arr[i]);
         s+=arr[i];
         print_subsq(vc,i+1, arr,s, size,sum);
 
+        //For non pick elements
         vc.pop_back();
         s-=arr[i];
         print_subsq(vc, i+1, arr, s,size ,sum);
@@ -71,6 +73,7 @@ int print_subsq(vector<int> &vc,int i, int arr[],int s, int size, int sum){
 
         vc.pop_back();
         s-=arr[i];
+        
         int r= print_subsq(vc, i+1, arr, s,size ,sum);
 
         return l+r;

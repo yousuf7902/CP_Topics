@@ -8,6 +8,8 @@ void all_permu(int ind, vector<int>& arr, vector<vector<int>>& ans){
     }
 
     for(int i=ind;i<arr.size();i++){
+
+        if(i!=ind && arr[i]==arr[i-1])continue;
         swap(arr[ind], arr[i]);
         all_permu(ind+1, arr, ans);
         swap(arr[ind], arr[i]);

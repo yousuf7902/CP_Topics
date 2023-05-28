@@ -8,7 +8,7 @@ int lower_bound(vector<int>&v, int element){
     while(hi-lo>1){
         int mid=(hi+lo)/2;
 
-        if(v[mid]< element){
+        if(v[mid] < element){
             lo=mid+1;
         }
         else{
@@ -61,7 +61,7 @@ int main(){
 
 /*------------------------------------------------------------------------------*/
 
-#include "bits/stdc++.h"
+/*#include "bits/stdc++.h"
 using namespace std;
 
 int main(){
@@ -78,7 +78,7 @@ int main(){
     cin>>element;
     
 
-    int l_bound=lower_bound(vec.begin(), vec.end(), element)- vec.begin(); // for find out the index;
+    int l_bound=lower_bound(vec.begin(), vec.end(), element) - vec.begin(); // for find out the index;
     
     if(l_bound<n){
         cout<<vec[l_bound]<<" => Index: "<<l_bound<<endl;
@@ -87,4 +87,4 @@ int main(){
         cout<<-1<<endl;
     }
 
-}
+}*/

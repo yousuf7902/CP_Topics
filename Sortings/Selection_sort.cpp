@@ -1,16 +1,17 @@
+/*---------------------------------------------------------------*/
+// >>>>>>>>>>>>>>>>>>>>>>>> Selection Sort <<<<<<<<<<<<<<<<<<<<< //
+//---------------------------------------------------------------//
+
+/*  find the minimum element in unsorted array and swap with element at begining
+     sort it {12,45,23,51,19,8}
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
 
-    /*---------------------------------------------------------------*/
-    // >>>>>>>>>>>>>>>>>>>>>>>> Selection Sort <<<<<<<<<<<<<<<<<<<<< //
-    //---------------------------------------------------------------//
-
-    /*  find the minimum element in unsorted array and swap with element at begining
-        sort it {12,45,23,51,19,8}
-    */
 
     int n;
     cin >> n;

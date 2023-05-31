@@ -1,19 +1,20 @@
+/*-------------------------------------------------------------*/
+// >>>>>>>>>>>>>>>>>>>>>>>>> Bubble Sort <<<<<<<<<<<<<<<<<<<<< //
+//-------------------------------------------------------------//
+
+/*  Reapetedly swap two adjacent elements if they are in wrong order
+    wrong order is Left number > Right number
+    sort it {12,45,23,51,19,8}
+        
+    Time Complexity : O(N^2)
+*/
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-
-    /*-------------------------------------------------------------*/
-    // >>>>>>>>>>>>>>>>>>>>>>>>> Bubble Sort <<<<<<<<<<<<<<<<<<<<< //
-    //-------------------------------------------------------------//
-
-    /*  Reapetedly swap two adjacent elements if they are in wrong order
-        wrong order is Left number > Right number
-        sort it {12,45,23,51,19,8}
-        
-        Time Complexity : O(N^2)
-    */
 
     int n;
     cin >> n;

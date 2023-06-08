@@ -1,3 +1,18 @@
+/*-------------------------------------------------------------*/
+// >>>>>>>>>>>>>>>>>>>>>> Quick Sort <<<<<<<<<<<<<<<<<<<<<<<<<<//
+//-------------------------------------------------------------//
+
+/*  Pivat means any element of the array.
+    1. Pick a pivat and place it in it correct place which in sorted array
+
+    2. compare with the pivat and all the values smaller and equal to goes left side and greater values are goes to right side.
+
+    Time Complexity : O(nlogn) (fastest)
+    But in the worst case it will be the O(n^2)
+*/
+
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
